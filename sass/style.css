@@ -1,0 +1,219 @@
+* {
+  position: relative;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  background-color: #FF9D00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.startScreen {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.startScreen .top, .startScreen .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.startScreen .bottom {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.startScreen .bigNumber {
+  font-size: 240px;
+  text-align: left;
+  font: Bold 240px/249px Roboto Condensed;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  text-shadow: 12px 0px 0px #000000;
+  opacity: 1;
+  margin-right: 24px;
+}
+
+.startScreen .bigTitle .n1, .startScreen .bigTitle .n2 {
+  text-align: left;
+  font: Bold 96px/96px Roboto Condensed;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.startScreen .bigTitle .operand {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.startScreen .bottom p {
+  font-size: 24px;
+  color: white;
+  font-style: italic;
+}
+
+.startScreen .bottom button {
+  background-color: black;
+  color: #FF9D00;
+  font-size: 36px;
+  width: 350px;
+}
+
+.gameScreen {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.gameScreen .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5%;
+}
+
+.gameScreen .title {
+  width: 352px;
+  height: 51px;
+  color: white;
+  font-size: 30px;
+  border: solid 4px white;
+  white-space: nowrap;
+}
+
+.gameScreen label {
+  width: 114px;
+  height: 55px;
+  line-height: 55px;
+  font-size: 30px;
+  background-color: white;
+  text-align: center;
+  color: #FF9D00;
+  font-weight: bold;
+}
+
+.gameScreen .score {
+  display: inline-block;
+  font-size: 44px;
+  color: black;
+  font-weight: bold;
+}
+
+.gameScreen .time {
+  font-size: 96px;
+  color: white;
+  font-style: italic;
+}
+
+.gameScreen .top-left {
+  margin-right: 150px;
+}
+
+.gameScreen .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gameScreen .bottom .num, .gameScreen .bottom .ans, .gameScreen .bottom .equal, .gameScreen .bottom .operator {
+  font-size: 100px;
+}
+
+.gameScreen .bottom .equal, .gameScreen .bottom .operator {
+  color: white;
+}
+
+.gameScreen .bottom .ans {
+  width: 20%;
+  background-color: #fff;
+}
+
+.gameScreen .bottom ::-webkit-input-placeholder {
+  vertical-align: middle;
+  font-size: 50px;
+}
+
+.gameScreen .bottom :-ms-input-placeholder {
+  vertical-align: middle;
+  font-size: 50px;
+}
+
+.gameScreen .bottom ::-ms-input-placeholder {
+  vertical-align: middle;
+  font-size: 50px;
+}
+
+.gameScreen .bottom ::placeholder {
+  vertical-align: middle;
+  font-size: 50px;
+}
+
+.endScreen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.endScreen .title {
+  width: 352px;
+  height: 51px;
+  color: white;
+  font-size: 30px;
+  border: solid 4px white;
+  white-space: nowrap;
+}
+
+.endScreen .score_title {
+  font-size: 56px;
+}
+
+.endScreen .score {
+  font-size: 112px;
+}
+
+.endScreen button {
+  width: 350px;
+  background-color: black;
+  color: #FF9D00;
+  font-size: 36px;
+}
+/*# sourceMappingURL=style.css.map */

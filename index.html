@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./sass/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="container-fluid content">
+            <div class="startScreen" v-if="!gameStart && !gameEnd">
+                <div class="row top">
+                    <div class="bigNumber">60</div>
+                    <div class="bigTitle">
+                        <div class="row">
+                            <div class="n1">
+                                SECONDS
+                            </div>
+                            <div class="operand">
+                                +−×÷
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="n2">
+                                CHALLENGE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row bottom">
+                    <button @click="startGame">START!</button>
+                    <p>try to answer more as you can</p>
+                </div>
+            </div>
+            <div class="gameScreen" v-else-if="gameStart && !gameEnd">
+                <div class="row top">
+                    <div class="top-left">
+                        <div class="title">60 SECONDS CHALLENGE</div>
+                            <label >score</label>
+                            <div class="score">{{score}}</div>
+                        
+                    </div>
+                    <div class="top-right time">{{time}}</div>
+                </div>
+                <div class="row bottom">
+                    <div class="num">{{num1}}</div>
+                    <div class="operator">{{operator[random]}}</div>
+                    <div class="num">{{num2}}</div>
+                    <div class="equal">=</div>
+                    <input type="text" class="ans" v-model="ans" placeholder="請輸入" @keyup.enter="checkAns">
+                </div>
+            </div>
+            <div class="endScreen" v-else-if="!gameStart && gameEnd">
+                <div class="row">
+                    <div class="title">60 SECONDS CHALLENGE</div>
+                </div>
+                <div class="row">
+                    <div class="score_title">— YOUR FINAL SCORE —</div>
+                </div>
+                <div class="row mb-5">
+                    <div class="score">{{score}}</div>
+                </div>
+                <div class="row mt-5">
+                    <button @click="reStart">TRY AGAIN!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>

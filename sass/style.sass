@@ -1,0 +1,120 @@
+*
+    // border: solid 1px black
+    position: relative
+    font-family: 'Roboto Condensed', sans-serif
+    // border: solid 1px black
+#app
+    width: 100vw
+    height: 100vh
+.content    
+    width: 100%
+    height: 100%
+    background-color: #FF9D00
+    display: flex
+    justify-content: center
+
+.startScreen
+    align-self: center
+    .top,.bottom
+        display: flex
+        justify-content: center
+    .bottom
+        flex-direction: column
+        align-items: center
+    .bigNumber
+        font-size: 240px
+        text-align: left
+        font: Bold 240px/249px Roboto Condensed
+        letter-spacing: 0px
+        color: #FFFFFF
+        text-shadow: 12px 0px 0px #000000
+        opacity: 1
+        margin-right: 24px
+    .bigTitle
+        .n1,.n2
+            text-align: left
+            font: Bold 96px/96px Roboto Condensed
+            letter-spacing: 0px
+            color: #000000
+            opacity: 1
+        .operand
+            color: white
+            font-weight: bold
+            font-size: 30px
+    .bottom
+        p
+            font-size: 24px
+            color: white
+            font-style: italic
+        button
+            background-color: black
+            color: #FF9D00
+            font-size: 36px
+            width: 350px
+.gameScreen
+    align-self: center
+    .top
+        display: flex
+        justify-content: center
+        margin-bottom: 5%
+    .title
+        width: 352px
+        height: 51px
+        color: white
+        font-size: 30px
+        border: solid 4px white
+        white-space: nowrap
+    label
+        width: 114px
+        height: 55px
+        line-height: 55px
+        font-size: 30px
+        background-color: white
+        text-align: center
+        color: #FF9D00
+        font-weight: bold
+    .score
+        display: inline-block
+        font-size: 44px
+        color: black
+        font-weight: bold
+    .time
+        font-size: 96px
+        color: white
+        font-style: italic
+    .top-left
+        margin-right: 150px 
+    .bottom
+        display: flex
+        justify-content: center    
+        .num,.ans,.equal,.operator
+            font-size: 100px   
+        .equal,.operator
+            color: white
+        .ans
+            width: 20%
+            background-color: #fff
+        ::placeholder
+            vertical-align: middle
+            font-size: 50px
+.endScreen
+    display: flex
+    flex-direction: column
+    align-items: center
+    align-self: center
+    .title
+        width: 352px
+        height: 51px
+        color: white
+        font-size: 30px
+        border: solid 4px white
+        white-space: nowrap
+    .score_title
+        font-size: 56px
+    .score
+        font-size: 112px
+    button
+        width: 350px
+        background-color: black
+        color: #FF9D00
+        font-size: 36px
